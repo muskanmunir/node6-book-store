@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="stylesheets/register.css">
+<%- include('header')%>
+<%- include('nav')%>
+
+<div class="list">
+    <div class="card">
+      <div class="heading"><h1>Registration form</h1></div>
+        <form action="./register" method="post" class="form">
+            
+            <div class="username">
+              <div class="fullname">
+                <label for="text" name="id">Enter Your ID: </label>
+                
+                <input type="number" name="id" placeholder="ID" />
+              </div>
+        
+              
+        
+              <div class="user">
+                <label for="text" name="name">Enter Your Name:</label>
+                
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name" />
+              </div>
+            </div>
+            
+            <div class="details">
+              <div class="email-div">
+                <label for="text" name="author">Enter Author Name: </label>
+               
+                <input type="text" name="author" placeholder=" Author Name" />
+              </div>
+        
+              
+              <div class="phone">
+                <label for="text" name="description">Enter Description: </label>
+                
+                <input
+                  type="text"
+                  name="description"
+                  placeholder=" Description"
+                />
+              </div>
+            </div>
+            
+            <div class="password">
+              <div class="pass">
+                <label for="text" name="publication"> En. Year Publication</label>
+                
+                <input
+                  type="number"
+                  name="publication"
+                  placeholder=" Year of Publication" />
+                </div>
+                
+              <div class="confirm">
+                <label for="text" name="bookname"> Enter the Book Name</label>
+                
+                <input
+                  type="text"
+                  name="bookname"
+                  placeholder=" Book Name"
+                />
+              </div>
+            </div>   
+            
+            <button>Register</button>
+          </form>
+        
+        
+    </div>
+    
+</div>
+<%- include('footer')%>

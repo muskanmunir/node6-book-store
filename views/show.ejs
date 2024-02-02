@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="stylesheets/show.css">
+<%- include('header')%>
+<%- include('nav')%>
+
+<div class="show">
+    <h1>Show Book</h1>
+    <div class="show-box"> 
+        <% books.forEach((e,index)=>{%>
+            <h2>
+             <%=e.name %>
+             <br>
+             <%=e.author %>
+             <br>
+             <%=e.description %>
+             <a href="/details/<%=index%>">Exlpore More</a> 
+             </h2>
+             
+         <%})%>
+    </div>
+    
+</div>
+
+
+<%- include('footer')%>

@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: monospace;
+    overflow: hidden;
+}
+.list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg,#e6a071,#706a62);
+    padding: 10px;
+   
+}
+
+.list .card{
+    max-width: 700px;
+    width: 100%;
+    background: linear-gradient(135deg,#A9A2A2,#2C0909);
+    padding: 25px 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+
+}
+.card .heading {
+    font-family: -apple-system;
+    padding: 20px 0  20px 0;
+    color: rgb(71, 18, 18);
+}
+.list .card .form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.form .username.fullname {
+    margin: 20px 0 12px 0;
+    width: calc(100%/2-20px);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.card input {
+    height: 30px;
+    width: 50%;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #290808;
+    padding-left: 15px;
+    font-size: 15px;
+    
+    
+}
+.form button {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    color: black;
+    background-color: #e6a071;
+}
+.form button:hover {
+    background-color: #724949;
+    color: white;
+    font-size: 25px;
+    /* transform: translate(all ease 1); */
+}

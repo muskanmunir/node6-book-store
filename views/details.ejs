@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="stylesheets/details.css">
+<%- include('header')%>
+<%- include('nav')%>
+
+<div class="alu">
+   <% books.forEach((e,index)=>{ %>
+      <div class="papu">
+         <h3>
+         ID:<%=e.id%> <br>
+         NAME:<%=e.name%> <br>
+         DESCRITPTION: <%=e.description%> <br>
+         AUTHOR: <%=e.author%> <br>
+         PUBLICATION: <%=e.publication%>
+      </h3>
+      </div>
+   
+      <a href="/delete/<%= index%>">Delete</a>
+&nbsp;&nbsp;&nbsp;
+<a href="/update/<%= index%>">Update</a>
+
+<%})%>
+</div>
+
+
+
+
+<%- include('footer')%>

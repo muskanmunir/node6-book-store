@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: monospace;
+    background-color: aqua;
+}
+/* Style for the outer container */
+.alu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Style for each book details container */
+.papu {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    text-align: left;
+    background-color: #f9f9f9; /* Adjust the background color as needed */
+}
+
+/* Style for the details heading */
+.papu h3 {
+    margin: 0;
+    color: #333; /* Adjust the color as needed */
+}
+
+/* Style for the Delete and Update links */
+.alu a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #007BFF; /* Adjust the color as needed */
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+}
+
+.alu a:hover {
+    background-color: #0056b3; /* Adjust the hover color as needed */
+    border-color: #0056b3;
+}
